@@ -1,0 +1,562 @@
+:root {
+    --mg-primary: #005BF0;
+    --mg-primary-hover: rgba(0, 91, 240, 0.08);
+    --mg-primary-btn-base: var(--mg-primary);
+    --mg-primary-btn-hover: #0069d9;
+    --mg-primary-btn-focus: #0069d9;
+    --mg-primary-btn-active: #0062cc;
+    --mg-border-color: #eeeeee;
+}
+
+/* common classes */
+.mgPlayerJSProd_btn-default {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-weight: normal;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 35px;
+    font-size: 14px;
+    height: 35px;
+    min-width: 100px;
+    max-width: 140px;
+    transition: all 0.3s;
+    background: linear-gradient(0deg, #fff0, #ffffff40), var(--mg-primary-btn-base);
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    margin: 0px 10px;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.mgPlayerJSProd_btn-default:hover {
+    background: var(--mg-primary-btn-hover);
+}
+
+.mgPlayerJSProd_btn-default:focus {
+    background: var(--mg-primary-btn-focus);
+    outline: medium solid black;
+}
+
+.mgPlayerJSProd_btn-default:active {
+    background: var(--mg-primary-btn-active);
+}
+
+.mgPlayerJSProd_btn-default:disabled,
+.mgPlayerJSProd_btn-default.disabled {
+    background: #ffffff;
+    color: #cfd0dd;
+    border-color: #cfd0dd;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-neutral {
+    height: 35px;
+    border: 1px solid #acadc1;
+    background: #ffffff;
+    color: #26273b;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-neutral:hover {
+    background: #F0F0F5;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-neutral:focus {
+    background: #DFE0E7;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-neutral:active {
+    background: #CFD0DD;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-border {
+    border: 1px solid var(--mg-primary);
+    color: var(--mg-primary);
+    background: #ffffff;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-border:hover {
+    background: #EBF7F5;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-border:focus {
+    background: #CEECE7;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-border:active {
+    background: #A6DED4;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-border.mgPlayerJSProd_btn-svg .mgPlayerJSProd_btn-svg-wrapper {
+    width: 15px;
+    height: 15px;
+    margin: 0px 5px 0px 0px;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-border.mgPlayerJSProd_btn-svg .mgPlayerJSProd_btn-svg-wrapper svg {
+    width: 100%;
+    height: 100%;
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-border.mgPlayerJSProd_btn-svg .mgPlayerJSProd_btn-svg-wrapper svg path {
+    fill: var(--mg-primary);
+}
+
+.mgPlayerJSProd_btn-default.mgPlayerJSProd_btn-large {
+    min-width: 174px;
+    height: 40px;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.mgPlayerJSProd_btn-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.mgPlayerJSProd_disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.mgPlayerJSProd_input-type-text {
+    border: 1px solid #707070 !important;
+    border-radius: 4px !important;
+    font-family: Arial, sans-serif;
+    width: 350px !important;
+    min-width: 0px !important;
+    min-height: 0px !important;
+    background: #ffffff !important;
+    padding: 0px 10px !important;
+    outline: none !important;
+    height: 40px !important;
+    box-sizing: border-box !important;
+    color: #000000 !important;
+    text-align: left !important;
+    box-shadow: 0px 1px 10px -8px #555555 inset;
+}
+
+.mgPlayerJSProd_input-type-text::-webkit-input-placeholder,
+.mgPlayerJSProd_input-type-text::-moz-placeholder,
+.mgPlayerJSProd_input-type-text::-moz-placeholder,
+.mgPlayerJSProd_input-type-text::-ms-input-placeholder {
+    color: #707070 !important;
+}
+
+.mgPlayerJSProd_font-size-12 {
+    font-size: 12px;
+}
+
+.mgPlayerJSProd_font-size-13 {
+    font-size: 13px;
+}
+
+.mgPlayerJSProd_font-size-14 {
+    font-size: 14px;
+}
+
+.mgPlayerJSProd_font-size-15 {
+    font-size: 15px;
+}
+
+.mgPlayerJSProd_font-size-16 {
+    font-size: 16px;
+}
+
+.mgPlayerJSProd_font-size-17 {
+    font-size: 17px;
+}
+
+.mgPlayerJSProd_font-size-18 {
+    font-size: 18px;
+}
+
+.mgPlayerJSProd_font-size-20 {
+    font-size: 20px;
+}
+
+.mgPlayerJSProd_clear {
+    clear: both;
+}
+
+.mgPlayerJSProd_no-margin {
+    margin: 0px !important;
+}
+
+.mgPlayerJSProd_no-padding {
+    padding: 0px !important;
+}
+
+.mgPlayerJSProd_mt-5 {
+    margin-top: 5px;
+}
+
+.mgPlayerJSProd_margin-5 {
+    margin: 5px;
+}
+
+.mgPlayerJSProd_margin-tb-5 {
+    margin: 5px 0px;
+}
+
+.mgPlayerJSProd_margin-lr-5 {
+    margin: 0px 5px;
+}
+
+.mgPlayerJSProd_margin-10 {
+    margin: 10px;
+}
+
+.mgPlayerJSProd_margin-tb-10 {
+    margin: 10px 0px;
+}
+
+.mgPlayerJSProd_margin-lr-10 {
+    margin: 0px 10px;
+}
+
+.mgPlayerJSProd_margin-15 {
+    margin: 15px;
+}
+
+.mgPlayerJSProd_margin-tb-15 {
+    margin: 15px 0px;
+}
+
+.mgPlayerJSProd_margin-lr-15 {
+    margin: 0px 15px;
+}
+
+.mgPlayerJSProd_margin-20 {
+    margin: 20px;
+}
+
+.mgPlayerJSProd_margin-tb-20 {
+    margin: 20px 0px;
+}
+
+.mgPlayerJSProd_margin-lr-20 {
+    margin: 0px 20px;
+}
+
+.mgPlayerJSProd_margin-25 {
+    margin: 25px;
+}
+
+.mgPlayerJSProd_margin-tb-25 {
+    margin: 25px 0px;
+}
+
+.mgPlayerJSProd_margin-lr-25 {
+    margin: 0px 25px;
+}
+
+.mgPlayerJSProd_padding-5 {
+    padding: 5px;
+}
+
+.mgPlayerJSProd_padding-tb-5 {
+    padding: 5px 0px;
+}
+
+.mgPlayerJSProd_padding-lr-5 {
+    padding: 0px 5px;
+}
+
+.mgPlayerJSProd_padding-10 {
+    padding: 10px;
+}
+
+.mgPlayerJSProd_padding-tb-10 {
+    padding: 10px 0px;
+}
+
+.mgPlayerJSProd_padding-lr-10 {
+    padding: 0px 10px;
+}
+
+.mgPlayerJSProd_padding-15 {
+    padding: 15px;
+}
+
+.mgPlayerJSProd_padding-tb-15 {
+    padding: 15px 0px;
+}
+
+.mgPlayerJSProd_padding-lr-15 {
+    padding: 0px 15px;
+}
+
+.mgPlayerJSProd_padding-20 {
+    padding: 20px;
+}
+
+.mgPlayerJSProd_padding-tb-20 {
+    padding: 20px 0px;
+}
+
+.mgPlayerJSProd_padding-lr-20 {
+    padding: 0px 20px;
+}
+
+.mgPlayerJSProd_padding-25 {
+    padding: 25px;
+}
+
+.mgPlayerJSProd_padding-tb-25 {
+    padding: 25px 0px;
+}
+
+.mgPlayerJSProd_padding-lr-25 {
+    padding: 0px 25px;
+}
+
+.mgPlayerJSProd_margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.mgPlayerJSProd_margin-b-0 {
+    margin-bottom: 0px !important;
+}
+
+.mgPlayerJSProd_display-inline-block {
+    display: inline-block;
+}
+
+.mgPlayerJSProd_inline-block-vm {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mgPlayerJSProd_inline-block-vt {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mgPlayerJSProd_inline-block-vb {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.mgPlayerJSProd_text-align-left {
+    text-align: left;
+}
+
+.mgPlayerJSProd_text-align-center {
+    text-align: center;
+}
+
+.mgPlayerJSProd_text-align-right {
+    text-align: right;
+}
+
+.mgPlayerJSProd_float-left {
+    float: left;
+}
+
+.mgPlayerJSProd_float-right {
+    float: right;
+}
+
+.mgPlayerJSProd_theme-background {
+    background: #0070C5;
+}
+
+.mgPlayerJSProd_theme-border {
+    border: 1px solid #0070C5;
+}
+
+.mgPlayerJSProd_theme-color {
+    color: #0070C5;
+}
+
+.mgPlayerJSProd_text-color-light {
+    color: #555555;
+}
+
+.mgPlayerJSProd_text-color-dark {
+    color: #000000;
+    opacity: 0.75;
+}
+
+.mgPlayerJSProd_width-100 {
+    width: 100% !important;
+}
+
+.mgPlayerJSProd_height-100 {
+    height: 100% !important;
+}
+
+.mgPlayerJSProd_width-50 {
+    width: 50% !important;
+}
+
+.mgPlayerJSProd_height-50 {
+    height: 50% !important;
+}
+
+.mgPlayerJSProd_position-relative {
+    position: relative;
+}
+
+.mgPlayerJSProd_font-weight-550 {
+    font-weight: 550;
+}
+
+.mgPlayerJSProd_cursor-pointer {
+    cursor: pointer;
+}
+
+.mgPlayerJSProd_border-radius-50 {
+    border-radius: 50%;
+}
+
+.mgPlayerJSProd_overflow {
+    overflow: auto;
+}
+
+.mgPlayerJSProd_overflow.mgPlayerJSProd_overflow-x {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.mgPlayerJSProd_overflow.mgPlayerJSProd_overflow-y {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.mgPlayerJSProd_overflow.mgPlayerJSProd_overflow-hidden {
+    overflow: hidden;
+}
+
+.mgPlayerJSProd_overflow::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 10px !important;
+    background-color: #F5F5F5 !important;
+}
+
+.mgPlayerJSProd_overflow::-webkit-scrollbar {
+    width: 7px !important;
+    background-color: #F5F5F5 !important;
+}
+
+.mgPlayerJSProd_overflow::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+    background-color: #b3b3b3 !important;
+}
+
+.mgPlayerJSProd_position-tr-10 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.mgPlayerJSProd_position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mgPlayerJSProd_width-height-auto {
+    width: auto;
+    height: auto;
+}
+
+.mgPlayerJSProd_width-height-100 {
+    width: 100%;
+    height: 100%;
+}
+
+.mgPlayerJSProd_max-width-height-100 {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mgPlayerJSProd_no-box-shadow {
+    box-shadow: none !important;
+}
+
+.mgPlayerJSProd_no-border.mgPlayerJSProd_no-border-all {
+    border: none !important;
+}
+
+.mgPlayerJSProd_no-border.mgPlayerJSProd_no-border-top {
+    border-top: none !important;
+}
+
+.mgPlayerJSProd_no-border.mgPlayerJSProd_no-border-right {
+    border-right: none !important;
+}
+
+.mgPlayerJSProd_no-border.mgPlayerJSProd_no-border-bottom {
+    border-bottom: none !important;
+}
+
+.mgPlayerJSProd_no-border.mgPlayerJSProd_no-border-left {
+    border-left: none !important;
+}
+
+.mgPlayerJSProd_rotate-180 {
+    transform: rotate(180deg);
+}
+
+.mgPlayerJSProd_text-uppercase {
+    text-transform: uppercase;
+}
+
+.mgPlayerJSProd_text-lowercase {
+    text-transform: lowercase;
+}
+
+.mgPlayerJSProd_text-capitalize {
+    text-transform: capitalize;
+}
+
+.mgPlayerJSProd_z-index.mgPlayerJSProd_z-index-max {
+    z-index: 2147483638;
+}
+
+.mgPlayerJSProd_show-text-tooltip:hover .mgPlayerJSProd_title-tooltip-wrapper {
+    font-weight: normal !important;
+    display: block !important;
+}
+
+.mgPlayerJSProd_display-none {
+    display: none;
+}
+
+.mgPlayerJSProd_display-block {
+    display: block;
+}
+
+.mgPlayerJSProd_text-color-white {
+    color: #fff !important;
+}
+
+.mgPlayerJSProd_text-color-black {
+    color: #000000 !important;
+}
+
+.mgPlayerJSProd_text-overflow-ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mgPlayerJSProd_display-none-imp {
+    display: none !important;
+}
+
+.mgPlayerJSProd_display-inline-block-imp {
+    display: inline-block !important;
+}
+
+.mgPlayerJSProd_pointer-events-none  {
+    pointer-events: none;  
+}
+
+.mgPlayerJSProd_error-text-color {
+    color: #DE350B !important;
+}
+/* common classes */
