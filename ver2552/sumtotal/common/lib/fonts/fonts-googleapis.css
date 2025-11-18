@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Arial;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('Nunito-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('Calibri-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Frutiger';
+  src: url('Frutiger.woff') format('woff');
+}
