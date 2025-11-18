@@ -43,9 +43,9 @@ function getMyGuideScriptCB() {
 
     function loadGuideMeClientFiles() {
         if (window.self === window.top) {
-            a.src = GmCXt.conf.baseUrl + 'gm_client_1763449067662.js';
+            a.src = GmCXt.conf.baseUrl + 'gm_client_1763457112441.js';
         } else {
-            a.src = GmCXt.conf.baseUrl + 'gm_client_iframe_1763449067662.js';
+            a.src = GmCXt.conf.baseUrl + 'gm_client_iframe_1763457112441.js';
         }
         document.head.appendChild(a);
     }

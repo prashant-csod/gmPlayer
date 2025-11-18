@@ -3,7 +3,7 @@ if (GmCXt === undefined) {
 }
 
 GmCXt.conf = {};
-GmCXt.conf.version = "2025.5.2";
+GmCXt.conf.version = "2025.5.2.1";
 GmCXt.conf.env = "Prod";
 GmCXt.conf.infra = "aws";
 
@@ -53,7 +53,7 @@ try {
 GmCXt.conf.allUrls = true;
 
 GmCXt.setConfig = function() {
-    GmCXt.conf.clientJsBaseUrl = "https://prashant-csod.github.io/gmPlayer/ver2552/sumtotal";
+    GmCXt.conf.clientJsBaseUrl = "https://prashant-csod.github.io/gmPlayer/ver2552/sumtotal/";
     GmCXt.conf.chromeExtensionUrl = "";
     GmCXt.conf.webServiceUrl = "https://api-v3.guideme.io/v3/";
     GmCXt.conf.staticContentPath = "https://cdn.guideme.io/guideme-assests/";
