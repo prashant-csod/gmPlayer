@@ -53,7 +53,7 @@ try {
 GmCXt.conf.allUrls = true;
 
 GmCXt.setConfig = function() {
-    GmCXt.conf.clientJsBaseUrl = "https://github.com/prashant-csod/gmPlayer/ver2559/sumtotal";
+    GmCXt.conf.clientJsBaseUrl = "https://prashant-csod.github.io/gmPlayer/ver2552/sumtotal";
     GmCXt.conf.chromeExtensionUrl = "";
     GmCXt.conf.webServiceUrl = "https://api-v3.guideme.io/v3/";
     GmCXt.conf.staticContentPath = "https://cdn.guideme.io/guideme-assests/";

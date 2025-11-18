@@ -3,7 +3,7 @@ if (typeof guideMe === 'undefined') {
     guideMe = {};
 }
 if (!guideMe.baseUrl) {
-    guideMe.baseUrl = "https://github.com/prashant-csod/gmPlayer/ver2559/sumtotal";
+    guideMe.baseUrl = "https://prashant-csod.github.io/gmPlayer/ver2552/sumtotal/";
 } 
 
 function getMyGuideScript() {
